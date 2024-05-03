@@ -55,7 +55,7 @@ def add_password():
             data.update(new_data)
             with open("data.json", "w") as data_file:
                 # saving updated data
-                json.dump(new_data, data_file, indent=4)
+                json.dump(data, data_file, indent=4)
         finally:
             website_field.delete(0, 'end')
             password_field.delete(0, 'end')
